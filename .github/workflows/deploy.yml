@@ -1,17 +1,17 @@
-# main.yml
-# name: Test Action
+name: Example GitHub Action
 
-# on:
-#   push:
-#     branches:
-#       - main  # or any branch you want to trigger the action
+on:
+  push:
+    branches:
+      - main  # Trigger the action on push to the main branch
 
-# jobs:
-#   test:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Checkout code
-#         uses: actions/checkout@v3
+jobs:
+  test:
+    runs-on: ubuntu-latest
 
-#       - name: 22f1000913@ds.study.iitm.ac.in
-#         run: echo "Hello, world!"
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: 22f1000913@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
